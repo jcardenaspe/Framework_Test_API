@@ -1,0 +1,114 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "etiqueta",
+    "activo",
+    "borrado",
+    "_id",
+    "autor",
+    "texto",
+    "fecha",
+    "__v",
+    "lote"
+  ],
+  "properties": {
+    "etiqueta": {
+      "$id": "#/properties/etiqueta",
+      "type": "array",
+      "title": "The Etiqueta Schema",
+      "items": {
+        "$id": "#/properties/etiqueta/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "locutor",
+          "varios",
+          "es-pe"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "activo": {
+      "$id": "#/properties/activo",
+      "type": "boolean",
+      "title": "The Activo Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "borrado": {
+      "$id": "#/properties/borrado",
+      "type": "boolean",
+      "title": "The Borrado Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "_id": {
+      "$id": "#/properties/_id",
+      "type": "string",
+      "title": "The _id Schema",
+      "default": "",
+      "examples": [
+        "5cffd80eb68d6c0038663641"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "autor": {
+      "$id": "#/properties/autor",
+      "type": "string",
+      "title": "The Autor Schema",
+      "default": "",
+      "examples": [
+        "::ffff:192.168.1.227"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "texto": {
+      "$id": "#/properties/texto",
+      "type": "string",
+      "title": "The Texto Schema",
+      "default": "",
+      "examples": [
+        "sin duda porque tanto ella como yo estábamos convencidos que nuestra relación no tendría ninguno."
+      ],
+      "pattern": "^(.*)$"
+    },
+    "fecha": {
+      "$id": "#/properties/fecha",
+      "type": "string",
+      "title": "The Fecha Schema",
+      "default": "",
+      "examples": [
+        "2019-06-11T16:34:22.206Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "__v": {
+      "$id": "#/properties/__v",
+      "type": "integer",
+      "title": "The __v Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "lote": {
+      "$id": "#/properties/lote",
+      "type": "string",
+      "title": "The Lote Schema",
+      "default": "",
+      "examples": [
+        "5d254b6102e8e00011ff0d02"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
