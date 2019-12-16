@@ -11,6 +11,7 @@ Usar el siguiente comando para ejecutar el feature demo creado: "mvn test -Dcucu
 
 El framework tiene la capicidad de obtener el resultado de las pruebas ejecutadas, cuando las pruebas finalizan ok imprimiendo en consola un mensaje como el siguiente:
 
+```
 @alpha_corpus @randomPhrase
 Feature: Random phrase
   Should be returner a random phrase.
@@ -29,6 +30,7 @@ Feature: Random phrase
 
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.607 sec - in RunCukesTest
 Good Job :D
+```
 
 Cuando la prueba finaliza con errores, imprimira en consola el paso que fallo junto con el error message generado por Cucumber, falta implementar la integración con Testlink para que todos los resultados se envien y tener un reporte, actualmente me encuentro trabajando en dicha integración.
 
