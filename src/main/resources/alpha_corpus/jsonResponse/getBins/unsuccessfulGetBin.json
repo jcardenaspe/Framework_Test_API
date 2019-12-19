@@ -1,9 +1,0 @@
-{
-  "clientErrorCode": 100300,
-  "clientErrorMessage": "Bin no existe",
-  "errorCode": 100300,
-  "externalErrorCode": null,
-  "errorMessages": [
-    "Bin no existe"
-  ]
-}
